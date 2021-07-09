@@ -14,12 +14,7 @@
     "default": {
       "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": [
-          "build",
-          "lint",
-          "test",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "lint", "test", "e2e"],
         "accessToken": "MTk0YmQzNWQtNjI2YS00MTkxLTkyMWUtYzk3OGJhN2UwNWI3fHJlYWQtd3JpdGU=",
         "canTrackAnalytics": false,
         "showUsageWarnings": true
@@ -35,14 +30,15 @@
     ]
   },
   "projects": {
+    "shared": {
+      "tags": []
+    },
     "staff-directory": {
       "tags": []
     },
     "staff-directory-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "staff-directory"
-      ]
+      "implicitDependencies": ["staff-directory"]
     }
   }
 }
