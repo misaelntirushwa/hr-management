@@ -15,7 +15,7 @@ export class EmployeeListComponent {
       lastName: 'Smith',
       title: 'Marketing Director',
       location: 'San Francisco, California',
-      phone: '(555) 555-5555',
+      phone: '(555) 555-5585',
       cellPhone: '(555) 555-5555',
       email: 'john.smith@hrmanagement.com',
     },
