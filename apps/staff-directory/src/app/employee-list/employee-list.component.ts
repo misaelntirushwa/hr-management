@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { EmployeeTile } from '@hr-management/ui';
 import { EmployeeSummary } from '@hr-management/shared';
 
@@ -7,7 +7,7 @@ import { EmployeeSummary } from '@hr-management/shared';
   templateUrl: './employee-list.component.html',
   styleUrls: ['./employee-list.component.scss'],
 })
-export class EmployeeListComponent implements OnInit {
+export class EmployeeListComponent {
   readonly employees: EmployeeSummary[] = [
     {
       avatar: '/assets/avatar.png',
@@ -40,8 +40,4 @@ export class EmployeeListComponent implements OnInit {
       type: 'regular',
     },
   ];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
