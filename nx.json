@@ -1,7 +1,7 @@
 {
   "npmScope": "hr-management",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "main"
   },
   "implicitDependencies": {
     "package.json": {
@@ -12,9 +12,17 @@
   },
   "tasksRunnerOptions": {
     "default": {
-      "runner": "@nrwl/workspace/tasks-runners/default",
+      "runner": "@nrwl/nx-cloud",
       "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"]
+        "cacheableOperations": [
+          "build",
+          "lint",
+          "test",
+          "e2e"
+        ],
+        "accessToken": "MTk0YmQzNWQtNjI2YS00MTkxLTkyMWUtYzk3OGJhN2UwNWI3fHJlYWQtd3JpdGU=",
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
       }
     }
   },
@@ -32,7 +40,9 @@
     },
     "staff-directory-e2e": {
       "tags": [],
-      "implicitDependencies": ["staff-directory"]
+      "implicitDependencies": [
+        "staff-directory"
+      ]
     }
   }
 }
