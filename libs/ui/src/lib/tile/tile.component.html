@@ -3,9 +3,9 @@
   <article>
       <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
       <p>{{ employee.title }}</p>
-      <p>{{ employee.location }}</p>
-      <p>{{ employee.phone }}</p>
-      <p>{{ employee.cellPhone }}</p>
-      <p>{{ employee.email }}</p>
+      <p><i class="fa fa-map-marker" aria-hidden="true"></i> {{ employee.location }}</p>
+      <p><i class="fa fa-phone" aria-hidden="true"></i> {{ employee.phone }}</p>
+      <p><i class="fa fa-mobile" aria-hidden="true"></i> {{ employee.cellPhone }}</p>
+      <p><i class="fa fa-envelope" aria-hidden="true"></i> {{ employee.email }}</p>
   </article>
 </ng-container>
