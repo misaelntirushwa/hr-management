@@ -31,14 +31,17 @@
   },
   "projects": {
     "shared": {
-      "tags": []
+      "tags": ["scope:shared"]
     },
     "staff-directory": {
-      "tags": []
+      "tags": ["scope:client"]
     },
     "staff-directory-e2e": {
-      "tags": [],
+      "tags": ["scope:client"],
       "implicitDependencies": ["staff-directory"]
+    },
+    "ui": {
+      "tags": ["scope:client"]
     }
   }
 }

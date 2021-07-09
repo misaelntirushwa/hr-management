@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@hr-management/shared": ["libs/shared/src/index.ts"]
+      "@hr-management/shared": ["libs/shared/src/index.ts"],
+      "@hr-management/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

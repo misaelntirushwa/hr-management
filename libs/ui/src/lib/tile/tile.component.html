@@ -1,0 +1,11 @@
+<ng-container *ngIf="employee">
+  <img [src]="employee.avatar" alt="avatar of the employee">
+  <article>
+      <h2>{{ employee.firstName }} {{ employee.lastName }}</h2>
+      <p>{{ employee.title }}</p>
+      <p>{{ employee.location }}</p>
+      <p>{{ employee.phone }}</p>
+      <p>{{ employee.cellPhone }}</p>
+      <p>{{ employee.email }}</p>
+  </article>
+</ng-container>
